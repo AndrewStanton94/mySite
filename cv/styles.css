@@ -198,6 +198,11 @@ td:nth-child(2) {
 	font-size: var(--font-body);
 }
 
-.mb-1 {
+.mb-1,
+.desktop-mb-1 {
 	margin-bottom: 1rem;
+}
+
+.mob-order-first {
+	order: initial;
 }

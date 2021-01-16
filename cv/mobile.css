@@ -7,9 +7,8 @@
 	--font-body: 1rem;
 }
 
-body {
+#main {
 	grid-template-areas:
-		'header'
 		'skills'
 		'current-employment'
 		'previous-employment'
@@ -23,6 +22,10 @@ body {
 	margin: 1rem;
 }
 
+body {
+	margin: 0;
+}
+
 body > header,
 body > section {
 	border: none;
@@ -32,4 +35,12 @@ body > section {
 
 header > .flex {
 	flex-direction: column;
+}
+
+.desktop-mb-1 {
+	margin-bottom: 0;
+}
+
+.mob-order-first {
+	order: -1;
 }
