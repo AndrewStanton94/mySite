@@ -1,0 +1,9 @@
+RewriteEngine On
+
+<IfModule headers_module>
+  header set X-Clacks-Overhead "GNU Terry Pratchett"
+</IfModule>
+
+RewriteCond %{HTTP_HOST} ^andrewstanton.tech$
+RewriteRule ^$ https://andrewstanton.tech/cv [R=302,L]
+RewriteRule ^bird$ https://apps.andrewstanton.tech/bird-beholder/ [R=301,L]

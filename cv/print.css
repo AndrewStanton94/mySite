@@ -1,0 +1,47 @@
+:root {
+	--font-header-large: 5rem;
+	--font-header-medium: 2.5rem;
+	--font-header-small: 1.25rem;
+	--font-header-smallest: 1rem;
+	--font-body: 0.75rem;
+}
+
+@page {
+	size: A4;
+	margin: 0.1cm 0.5cm;
+}
+
+body > * {
+	border: none;
+}
+
+#main {
+	column-count: 2;
+	column-rule: 2px solid var(--color-accent);
+	column-gap: 2rem;
+}
+
+h1,
+h2,
+h3 {
+	page-break-after: avoid;
+	break-after: avoid;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.entry {
+	page-break-inside: avoid;
+}
+
+.flex-grow-1,
+.flex-grow-2 {
+	flex-grow: 0;
+}
+
+.screen {
+	display: none;
+}

@@ -1,0 +1,35 @@
+:root {
+	/* Typography*/
+	--font-header-large: 5rem;
+	--font-header-medium: 2.5rem;
+	--font-header-small: 1.75rem;
+	--font-header-smallest: 1.5rem;
+	--font-body: 1rem;
+}
+
+body {
+	grid-template-areas:
+		'header'
+		'skills'
+		'current-employment'
+		'previous-employment'
+		'relevant-qualification'
+		'other-qualifications'
+		'volunteering'
+		'other-interests';
+
+	grid-template-columns: 100%;
+
+	margin: 1rem;
+}
+
+body > header,
+body > section {
+	border: none;
+	border-bottom: #5f0f40 solid 3px;
+	padding: 1rem;
+}
+
+header > .flex {
+	flex-direction: column;
+}
