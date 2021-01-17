@@ -42,10 +42,10 @@ body {
 	grid-template-columns: 60% 40%;
 	grid-template-areas:
 		'current-employment  skills'
-		'current-employment  relevant-qualification'
+		'previous-employment relevant-qualification'
 		'previous-employment other-qualifications'
 		'previous-employment volunteering'
-		'other-interests volunteering';
+		'previous-employment other-interests';
 
 	grid-column-gap: 1rem;
 	grid-row-gap: 1rem;
