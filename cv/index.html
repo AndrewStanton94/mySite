@@ -86,7 +86,8 @@
 							<strong class="header"
 								>Migrated to AWS Fargate:</strong
 							>
-							Removed idling EC2s by setting up scheduled tasks.
+							Removed idling EC2s (93% less hours). Used scheduled
+							tasks to mirror the content.
 						</li>
 						<li>
 							<strong class="header"
@@ -98,9 +99,30 @@
 						</li>
 						<li>
 							<strong class="header">Expanded DR coverage</strong>
-							Added a second sub-domain. 3 websites protected.
-							Implemented a redirect tool and pagination for
-							search results.
+							<ul>
+								<li>
+									Added a second sub-domain. 3 websites
+									protected.
+								</li>
+
+								<li>
+									Implemented a redirect tool and pagination
+									for search results.
+								</li>
+							</ul>
+						</li>
+						<li>
+							<strong class="header">Increased security</strong>
+							<ul>
+								<li>Automated CD with AWS Code Pipeline</li>
+								<li>
+									Used AWS Secret Manager to sensitive data
+								</li>
+								<li>
+									Activated automatic upgrades on Elastic
+									Beanstalk instances
+								</li>
+							</ul>
 						</li>
 					</ul>
 
