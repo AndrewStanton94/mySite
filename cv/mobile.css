@@ -11,10 +11,10 @@
 	grid-template-areas:
 		'skills'
 		'current-employment'
-		'previous-employment'
 		'relevant-qualification'
-		'other-qualifications'
+		'previous-employment'
 		'volunteering'
+		'other-qualifications'
 		'other-interests';
 
 	grid-template-columns: 100%;
