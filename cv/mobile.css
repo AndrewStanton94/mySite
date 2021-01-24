@@ -48,3 +48,7 @@ body > section {
 .mob-order-first {
 	order: -1;
 }
+
+.desktop-flex-column {
+	flex-direction: initial;
+}

@@ -109,6 +109,14 @@ ul {
 	padding-inline-start: 1.1rem;
 }
 
+address {
+	font-style: normal;
+}
+
+header > div > * {
+	margin: 0.3rem;
+}
+
 p,
 li {
 	padding-top: 0.25rem;
@@ -158,6 +166,7 @@ td:nth-child(2) {
 	flex-wrap: wrap;
 }
 
+.desktop-flex-column,
 .flex-column {
 	flex-direction: column;
 }
@@ -192,6 +201,10 @@ td:nth-child(2) {
 /* Margins */
 .margin-left-half-rem {
 	margin-left: 0.5rem;
+}
+
+.margin-right-half-rem {
+	margin-right: 0.5rem;
 }
 
 .font-body {
