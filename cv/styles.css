@@ -39,7 +39,7 @@ body {
 
 #main {
 	display: grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: 65% 32%;
 	grid-template-areas:
 		'current-employment  skills'
 		'current-employment relevant-qualification'
@@ -47,8 +47,8 @@ body {
 		'current-employment other-qualifications'
 		'previous-employment other-interests';
 
-	grid-column-gap: 1rem;
-	grid-row-gap: 1rem;
+	column-gap: 1rem;
+	row-gap: 1rem;
 }
 
 header {

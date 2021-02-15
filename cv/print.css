@@ -20,9 +20,15 @@ body > * {
 }
 
 #main {
-	column-count: 2;
-	column-rule: 2px solid var(--color-accent);
-	column-gap: 2rem;
+	column-gap: 1rem;
+
+	grid-template-areas:
+		'current-employment  skills'
+		'current-employment relevant-qualification'
+		'current-employment volunteering'
+		'current-employment other-qualifications'
+		'previous-employment other-qualifications'
+		'previous-employment other-interests';
 }
 
 h1,
@@ -37,9 +43,13 @@ a {
 	color: inherit;
 }
 
-.entry,
-ul {
+/* .entry, */
+li {
 	page-break-inside: avoid;
+}
+
+h2 {
+	page-break-after: avoid;
 }
 
 .flex-grow-1,
