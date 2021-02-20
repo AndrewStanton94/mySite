@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: https://andrewstanton.tech/webmail
+Disallow: https://andrewstanton.tech/cpanel
+Disallow: http://andrewstanton.tech/webmail
+Disallow: http://andrewstanton.tech/cpanel
