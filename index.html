@@ -7,46 +7,49 @@
 		<link rel="stylesheet" href="styles.css" />
 		<title>Andrew Stanton</title>
 	</head>
-	<body class="hcard-display h-card p-author">
-		<header class="flex flex-justify-between mb-3">
-			<section class="flex-grow-1">
-				<h1 class="header header-large">
-					<span class="p-given-name">Andrew</span>
-					<span class="p-family-name">Stanton</span>
-				</h1>
-				<p class="p-job-title">Web Developer</p>
-				<p class="p-note">
-					Alumni of the
-					<span class="p-org">University of Portsmouth</span>
-					(<span class="p-honorific-suffix">MEng</span>
-					Computer Science).
-				</p>
-				<p class="p-note">
-					Looking for opportunities to do something useful through web
-					technology.
-				</p>
-				<address class="h-adr">
-					<span class="p-locality">Basingstoke</span>,
-					<span class="p-region">Hampshire</span>,
-					<span class="p-country-name">UK</span>
-				</address>
-			</section>
-			<a
-				class="u-url url fn u-uid"
-				href="https://andrewstanton.tech/"
-				rel="author"
-			>
-				<img
-					src="https://andrewstanton.tech/wp/wp-content/uploads/2019/12/Stanton2.png"
-					width="125"
-					height="125"
-				/>
-			</a>
-		</header>
-		<div class="flex flex-justify-between desktop-flex-row-rev">
+	<body>
+		<div class="hcard-display h-card p-author mb-3">
+			<header class="flex flex-justify-between mob-col-rev mb-1">
+				<section class="flex-grow-1">
+					<h1 class="header header-large">
+						<span class="p-given-name">Andrew</span>
+						<span class="p-family-name">Stanton</span>
+					</h1>
+					<p class="p-job-title">Web Developer</p>
+					<div class="p-note">
+						<p>
+							Alumni of the
+							<span class="p-org">University of Portsmouth</span>
+							(<span class="p-honorific-suffix">MEng</span>
+							Computer Science).
+						</p>
+						<p class="p-note">
+							Looking for opportunities to do something useful
+							through web technology.
+						</p>
+					</div>
+					<address class="h-adr">
+						<span class="p-locality">Basingstoke</span>,
+						<span class="p-region">Hampshire</span>,
+						<span class="p-country-name">UK</span>
+					</address>
+				</section>
+				<a
+					class="u-url url fn u-uid"
+					href="https://andrewstanton.tech/"
+					rel="author me"
+				>
+					<img
+						class="u-photo"
+						src="https://andrewstanton.tech/wp/wp-content/uploads/2019/12/Stanton2.png"
+						width="250"
+						height="250"
+					/>
+				</a>
+			</header>
 			<nav class="flex-grow-1">
 				<h2 class="header header-medium">Links</h2>
-				<ul>
+				<ul class="flex flex-justify-between flex-wrap">
 					<li><a href="/cv" title="My CV">CV</a></li>
 					<li><a href="/wp" title="My blog">Blog</a></li>
 					<li>
@@ -75,33 +78,31 @@
 					</li>
 				</ul>
 			</nav>
-			<main class="flex-grow-1">
-				<h2 class="header header-medium">My values</h2>
-				<dl>
-					<dt>Exploration</dt>
-					<dd>Finding out new things</dd>
-
-					<dt>Collaboration</dt>
-					<dd>
-						Working with people I care about towards a common goal
-					</dd>
-
-					<dt>Clarity</dt>
-					<dd>
-						Understanding the situation so that I can provide the
-						right solution
-					</dd>
-
-					<dt>Creativity</dt>
-					<dd>Being open to new and better ways of doing things</dd>
-
-					<dt>Focus</dt>
-					<dd>Persevering with worthwhile tasks</dd>
-
-					<dt>Nature</dt>
-					<dd>The planet and all the life it supports</dd>
-				</dl>
-			</main>
 		</div>
+		<main class="flex-grow-1">
+			<h2 class="header header-medium">My values</h2>
+			<dl>
+				<dt>Exploration</dt>
+				<dd>Finding out new things</dd>
+
+				<dt>Collaboration</dt>
+				<dd>Working with people I care about towards a common goal</dd>
+
+				<dt>Clarity</dt>
+				<dd>
+					Understanding the situation so that I can provide the right
+					solution
+				</dd>
+
+				<dt>Creativity</dt>
+				<dd>Being open to new and better ways of doing things</dd>
+
+				<dt>Focus</dt>
+				<dd>Persevering with worthwhile tasks</dd>
+
+				<dt>Nature</dt>
+				<dd>The planet and all the life it supports</dd>
+			</dl>
+		</main>
 	</body>
 </html>
