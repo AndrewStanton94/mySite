@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Condensed&display=swap');
+
+:root {
+	/* Typography*/
+	--font-header-large: 4rem;
+	--font-header-medium: 2rem;
+	--font-header-small: 1.5rem;
+	--font-header-smallest: 1.25rem;
+	--font-body: 1rem;
+
+	--font-header-family: 'Ubuntu Condensed', sans-serif;
+	--font-body-family: 'Open Sans', sans-serif;
+
+	/* Colours*/
+	--color-grey: #c4c9e6;
+	--color-dark: #301e20;
+	--color-accent: #5f0f40;
+
+	/* Applying defaults */
+	font-size: var(--font-body);
+	font-family: var(--font-body-family);
+	color: var(--color-dark);
+}
+
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*---------------------------------------------------------
+	Layout
+*/
+body {
+	background-color: var(--color-grey);
+	margin: 2rem;
+}
+
+/*---------------------------------------------------------
+	Element Styling
+*/
+body > section {
+	border-left: #5f0f40 solid 1px;
+	padding: 1rem;
+}
+
+h2 {
+	border-bottom: 2px var(--color-accent) solid;
+}
+
+h3 {
+	margin: 0.5rem 0;
+	border-bottom: 1px var(--color-accent) solid;
+}
+
+h4 {
+	margin: 1rem 0 0.75rem;
+	border-bottom: 1px var(--color-accent) solid;
+}
+
+a {
+	text-decoration: none;
+}
+
+p,
+dt,
+li {
+	padding-top: 1rem;
+	/* padding-bottom: 0.25rem; */
+}
+
+li {
+	list-style: none;
+}
+
+dt {
+	color: var(--color-accent);
+	font-weight: bold;
+}
+
+dd::before {
+	color: var(--color-accent);
+	content: "⯈ ";
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+	width: 25%;
+	padding-right: 1rem;
+	border-right: 2px solid var(--color-accent);
+	text-align: right;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+	padding-left: 1rem;
+	text-align: left;
+}
+
+/*---------------------------------------------------------
+	Utility classes
+*/
+
+/* Flex*/
+.flex {
+	display: flex;
+}
+
+.flex-justify-between {
+	justify-content: space-between;
+}
+
+.desktop-flex-column,
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-grow-1 {
+	flex-grow: 1;
+}
+
+/* Headers*/
+.header {
+	font-size: var(--font-header-smallest);
+	font-family: var(--font-header-family);
+	color: var(--color-accent);
+}
+
+.header-large {
+	font-size: var(--font-header-large);
+}
+
+.header-medium {
+	font-size: var(--font-header-medium);
+}
+
+.header-small {
+	font-size: var(--font-header-small);
+}
+
+/* Margins */
+.margin-left-half-rem {
+	margin-left: 0.5rem;
+}
+
+.margin-right-half-rem {
+	margin-right: 0.5rem;
+}
+
+.font-body {
+	font-size: var(--font-body);
+}
+
+.mb-3 {
+	margin-bottom: 3rem;
+}
+
+.desktop-flex-row-rev {
+	flex-direction: row-reverse;
+}
