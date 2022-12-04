@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="style.css" rel="stylesheet" />
+		<title>📜CMC extractor</title>
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Course Module Catalog extractor" />
+		<meta property="og:url" content="https://andrewstanton.tech/cmc/" />
+		<meta
+			property="og:image"
+			content="https://andrewstanton.tech/Stanton2.webp"
+		/>
+		<meta property="og:site_name" content="Andrew's personal site" />
+		<meta
+			property="og:description"
+			content="Not the OG but I have my uses"
+		/>
+	</head>
+	<body data-new-gr-c-s-loaded="14.1062.0">
+		<main class="w-4/5 mx-auto p-16 bg-uop_bg">
+			<h1 class="text-6xl pb-8 font-bold text-uop_light">
+				Course Module Catalog extractor
+			</h1>
+
+			<p>
+				Getting the modules ready for the PGT course pages looked fiddly
+				so I&#39;ve tried to speed up the process.
+			</p>
+
+			<div class="grid grid-cols-2 gap-8">
+				<section class="space-y-4">
+					<h2 class="text-3xl pt-8 pb-4 font-bold text-uop_dark">
+						What does it do?
+					</h2>
+
+					<p>
+						On a <strong>module page</strong> it plucks out the
+						information we want to add to the main site and prepares
+						the:
+					</p>
+
+					<ul class="list-disc list-outside pl-8">
+						<li>Component name</li>
+						<li>Accordion title</li>
+						<li>Module description</li>
+					</ul>
+
+					<p>
+						It shows the information in a modal, ready for you to
+						copy into the
+						<abbr title="Content Management System">CMS</abbr>.
+					</p>
+
+					<p>
+						If you run this on a <strong>course page</strong>, it
+						will remove modules with no credits.
+					</p>
+
+					<p>
+						If you run this on other pages or sites you may get a
+						prompt for course search. Other sites will stop my code
+						from running on their pages so you may see nothing. So
+						this script shouldn&#39;t do anything on other sites.
+					</p>
+				</section>
+
+				<section class="space-y-4">
+					<h2 class="text-3xl pt-8 pb-4 font-bold text-uop_dark">
+						How do I use it?
+					</h2>
+
+					<p>
+						Drag the following link to your bookmark bar, and click
+						it when you&#39;re on a Course Module Catalogue page.
+					</p>
+
+					<p class="py-8">
+						<a
+							class="p-8 text-slate-50 font-semibold text-lg bg-uop_cta hover:bg-uop_interact transition"
+							href="javascript:( function(){
+							const sc = document.createElement('script');
+							sc.src = 'https://andrewstanton.tech/cmc/cmc.js';
+							document.querySelector('head').append(sc);
+						})();"
+							>📜CMC Module extractor
+						</a>
+					</p>
+				</section>
+
+				<section class="space-y-4">
+					<h2
+						class="text-3xl pt-8 pb-4 font-bold text-uop_dark"
+						id="changelog"
+					>
+						Change log
+					</h2>
+
+					<h3 class="text-xl text-uop_light">v1.2.0</h3>
+					<ul class="list-disc list-outside pl-8">
+						<li>Remove colons and commas from the titles</li>
+						<li>Updated capitalisation on Awards (MA, MSc, LLM)</li>
+						<li>Clicking outside the modal closes it</li>
+					</ul>
+
+					<h3 class="text-xl text-uop_light">v1.1.1</h3>
+					<ul class="list-disc list-outside pl-8">
+						<li>
+							Trim space characters from the learning outcomes
+						</li>
+					</ul>
+
+					<h3 class="text-xl text-uop_light">v1.1.0</h3>
+
+					<ul class="list-disc list-outside pl-8 space-y-2">
+						<li>Using title case for the module name</li>
+						<li>
+							Prevented caching.
+							<div class="pl-8">
+								<p>
+									If you&#39;ve used version 1.0.0. please
+									delete the cache.
+								</p>
+
+								<p>
+									From the CMC: open dev tools <kbd>F12</kbd>,
+									then press and hold the refresh button to
+									open a menu, select
+									<output
+										>Empty cache and hard refresh</output
+									>
+								</p>
+							</div>
+						</li>
+					</ul>
+
+					<h3 class="text-xl text-uop_light">v1.0.1</h3>
+
+					<ul class="list-disc list-outside pl-8">
+						<li>Wrapped the list in <code>ul</code> tags</li>
+					</ul>
+				</section>
+
+				<section class="space-y-4">
+					<h2 class="text-3xl pt-8 pb-4 font-bold text-uop_dark">
+						Limitations
+					</h2>
+
+					<p>
+						Please tell me if you find issues. This was a weekend
+						project so it hasn&#39;t been properly tested yet.
+					</p>
+
+					<ul class="list-disc list-outside pl-8">
+						<li>
+							It doesn&#39;t account for modules without a name or
+							a module code.
+						</li>
+						<li>
+							You still have to open each module to get the
+							information. I&#39;d like to fetch everything from
+							the course page but I was confused by the duplicated
+							modules. Something for version 2 :D
+						</li>
+					</ul>
+				</section>
+			</div>
+		</main>
+	</body>
+</html>
